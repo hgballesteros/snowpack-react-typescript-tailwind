@@ -1,0 +1,41 @@
+{
+  "name": "snowpack-react-typescript-tailwind",
+  "description": "A preconfigured template for Snowpack with React, TypeScript, and TailwindCSS",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "web-test-runner \"src/**/*.test.tsx\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "postinstall": "npm run generate-css-types",
+    "generate-css-types": "tailwindcss-classnames --config tailwind.config.js -o src/tailwindcss-classnames.ts"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-classnames": "^1.9.0"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-postcss": "^1.0.11",
+    "@snowpack/plugin-react-refresh": "^2.3.9",
+    "@snowpack/plugin-typescript": "^1.1.1",
+    "@snowpack/web-test-runner-plugin": "^0.1.5",
+    "@testing-library/react": "^11.0.0",
+    "@types/chai": "^4.2.13",
+    "@types/classnames": "^2.2.11",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/snowpack-env": "^2.3.2",
+    "@web/test-runner": "^0.10.0",
+    "autoprefixer": "^10.1.0",
+    "chai": "^4.2.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "prettier": "^2.0.5",
+    "snowpack": "^2.18.5",
+    "typescript": "^4.0.0"
+  }
+}
