@@ -1,6 +1,22 @@
 {
   "name": "snowpack-react-typescript-tailwind",
-  "description": "A preconfigured template for Snowpack with React, TypeScript, and TailwindCSS",
+  "description": "A pre-configured template for Snowpack with React, TypeScript, and TailwindCSS",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/hgballesteros/snowpack-react-typescript-tailwind",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hgballesteros/snowpack-react-typescript-tailwind.git"
+  },
+  "keywords": [
+    "csa-template",
+    "snowpack",
+    "react",
+    "tailwindcss",
+    "tailwind",
+    "ts",
+    "typescript"
+  ],
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",

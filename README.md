@@ -2,10 +2,15 @@
 
 Built off of [@snowpack/app-template-react-typescript](https://github.com/snowpackjs/snowpack/tree/main/create-snowpack-app/app-template-react-typescript).
 
+Demo at [snowpack-react-typescript-tailwind.vercel.app](https://snowpack-react-typescript-tailwind.vercel.app)
+
 ## Getting Started
 
-1. `yarn start`
-2. `yarn start`
+1. `npx create-snowpack-app new-app --template snowpack-react-typescript-tailwind [--use-yarn | --use-pnpm | --no-install]`
+2. `cd new-app` to switch to your project directory.
+3. `npm start` to run the dev server.
+
+Replace `new-app` with the name of your application.
 
 ## NPM Scripts
 
@@ -14,7 +19,7 @@ Built off of [@snowpack/app-template-react-typescript](https://github.com/snowpa
 - `test` runs tests. Note that you need to add a `--` before additional cli parameters when running this script through npm.
   e.g. `npm test -- --watch`
 - `generate-css-types` will generate Typescript types based on `tailwind.config.js` (and output to `src/tailwindcss-classnames.ts`).
-  Use this script when you alter the config. It runs after npm installation by default.
+  Use this script when you alter the tailwind config. It runs after npm installation by default.
 
 ## Tooling
 
@@ -55,5 +60,7 @@ package.
 2. It's super easy to disable (remove or comment out the `experimental` portion of `snowpack.config.js`)
 
 ### Yarn
+
+> Not applicable if you used `npx create-snowpack-app new-app --template snowpack-react-typescript-tailwind`
 
 Remove `yarn.lock` if you want to switch package managers (i.e. npm, etc)
